@@ -1,0 +1,40 @@
+.partie_rouge{
+    background-color: #EC1C24;
+    
+}
+
+.image_PP{
+    height: 800px;
+    border-radius: 2%;
+    margin: 5px;
+    
+}
+
+
+.permier_defilement{
+    display: flex;
+}
+
+.icone{
+    background-color: #EC1C24;
+    width: 90px;
+    height: 91px;
+        
+}
+
+.Boutton_incone{
+    background-color: #EC1C24;
+    width: 211px;
+    height: 211px;
+    border: 5px solid #FFFFFF;
+    border-radius: 18px;
+    opacity: 1;
+    color: #FFFFFF;
+    margin: 2%;
+
+}
+
+.icone2{
+    margin-left: 10%;
+    margin-right: 10%;
+}

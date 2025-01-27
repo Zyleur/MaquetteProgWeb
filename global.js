@@ -1,5 +1,5 @@
-let image1 = document.getElementById('image1');
-let image2 = document.getElementById('image2');
+let image1 = document.getElementById('image2');
+let image2 = document.getElementById('image3');
 let conteur = 1;
 
 

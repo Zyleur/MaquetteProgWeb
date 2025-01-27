@@ -399,3 +399,26 @@ footer .colContact .logo{
 
 
     /*----------------------- SLIDER2 --------------------------*/
+#container1 {
+    background-color: #EC1C24;
+    overflow: hidden;
+    display: flex;
+}
+
+#image {
+    position: relative;
+    display: flex;
+    white-space: nowrap; 
+}
+
+#img1 {
+    margin-top: 10%;
+    margin-right: 1%;
+    width: 211px;
+    height: 211px;
+}
+
+#img1:hover{
+    width: 250px;
+    height: 250px;
+}

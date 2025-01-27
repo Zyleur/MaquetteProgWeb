@@ -42,23 +42,38 @@ document.addEventListener("DOMContentLoaded", () => {
 var defile = document.getElementById('bas');
 var container = document.getElementById('container');
 var pt = 0; 
-
-function imgDefile() {
-    if (!defile) defile = document.getElementById('bas');
+function next() {
+    if (!defile) defile = document.getElementById('bas'); 
     if (defile) {
-        pt -= 0.5;
+        pt -= 200; 
         if (pt <= -defile.offsetWidth) {
-            pt = 0;
+            pt = 0; 
         }
-        defile.style.transform = `translateX(${pt}px)`;
+        defile.style.transform = `translateX(${pt}px)`; 
     }
-    requestAnimationFrame(imgDefile); 
 }
 
-imgDefile();
+function prev() {
+    if (!defile) defile = document.getElementById('bas'); 
+    if (defile) {
+        pt += 200; 
+        if (pt <= -defile.offsetWidth) {
+            pt = 0; 
+        }
+        defile.style.transform = `translateX(${pt}px)`; 
+    }
+}
 
+const bg = document.getElementById('f1');
+const bd = document.getElementById('f2');
 
-
+bd.addEventListener("click", () =>{
+    next();
+    
+});
+bg.addEventListener("click", () =>{
+    prev();
+});
 
 const imageContainer = document.getElementById("image");
 

@@ -1,8 +1,6 @@
-body {
-    background-color: #EC1C24;
-}
 
-#container {
+#container1 {
+    background-color: #EC1C24;
     overflow: hidden;
     display: flex;
 }
@@ -13,14 +11,14 @@ body {
     white-space: nowrap; 
 }
 
-#img {
+#img1 {
     margin-top: 10%;
     margin-right: 1%;
     width: 211px;
     height: 211px;
 }
 
-#img:hover{
+#img1:hover{
     width: 250px;
     height: 250px;
 }

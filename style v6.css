@@ -1,6 +1,5 @@
 #container{
     background-color: #EC1C24;
-    position: relative;
     display: grid;
     grid-template-columns: 30% 20% 40%;
     grid-template-rows: 30% 30% 100%;
@@ -115,7 +114,6 @@
 #img {
     height: auto;
     width: 500%;
-    object-fit: cover;
 }
 
 
@@ -136,7 +134,7 @@
     grid-column: 1 ;
     grid-row: 1;
 }
-.twoing {
+.twoimg {
     grid-column: 2 ;
     grid-row: 1 ;
     
@@ -345,7 +343,7 @@ legend{
 
 
 body {
-    background: fixed no-repeat url("./img/ImageHeureTranquille.jpg");
+    background: fixed no-repeat url("./image/ImageHeureTranquille.jpg");
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -468,7 +466,7 @@ body {
     grid-template-columns: 1fr 1fr 1.5fr;
     grid-template-rows: 1fr 0.5fr;
     padding: 5% 10% 0% 15%;
-    margin-top: 200px;
+    margin-top: 0px;
     gap: 15%;
     background-color: white;
     left: 0;
@@ -626,3 +624,29 @@ footer .colContact .logo{
         grid-column: 1;
         grid-row: 4;
     }}
+
+
+    #container1 {
+    background-color: #EC1C24;
+    overflow: hidden;
+    display: flex;
+}
+
+#image {
+    position: relative;
+    display: flex;
+    white-space: nowrap; 
+}
+
+#img1 {
+    margin-top: 4%;
+    margin-right: 1%;
+    width: 211px;
+    height: 211px;
+    margin-bottom: 2%;
+}
+
+#img1:hover{
+    width: 250px;
+    height: 250px;
+}

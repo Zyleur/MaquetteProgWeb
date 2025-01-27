@@ -89,6 +89,8 @@
 }
 
 .h2_erwan{
+    webkit-text-stroke-width: 3px;
+    webkit-text-stroke-color: white;
     position: absolute;
     bottom: 20%;
     right: 0%;

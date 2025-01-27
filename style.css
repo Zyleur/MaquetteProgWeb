@@ -707,5 +707,8 @@ footer .colContact .logo{
             width: 0px;
             height: 0px;
         }
+        .fleche_droite{
+            width: 10%;
+        }
     }
 

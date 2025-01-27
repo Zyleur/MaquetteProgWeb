@@ -703,8 +703,7 @@ footer .colContact .logo{
         }
 
         .image_PP{
-          width: 50%;
-          height: 50%;
+          opacity:0;
         }
     }
 

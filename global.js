@@ -23,3 +23,58 @@ function contenuAJour(conteur){
         image2.src = './img/img_mocku.png';
    }
 }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const iconRecherche = document.getElementById("iconRecherche");
+    const zoneRecherche = document.querySelector(".zoneRecherche");
+
+    iconRecherche.addEventListener("click", () => {
+        if (zoneRecherche.style.display === "none" || !zoneRecherche.style.display) {
+            zoneRecherche.style.display = "flex";
+        } else {
+            zoneRecherche.style.display = "none";
+        }
+    });
+});
+
+
+var defile = document.getElementById('bas');
+var container = document.getElementById('container');
+var pt = 0; 
+
+function imgDefile() {
+    if (!defile) defile = document.getElementById('bas');
+    if (defile) {
+        pt -= 0.5;
+        if (pt <= -defile.offsetWidth) {
+            pt = 0;
+        }
+        defile.style.transform = `translateX(${pt}px)`;
+    }
+    requestAnimationFrame(imgDefile); 
+}
+
+imgDefile();
+
+
+
+
+const imageContainer = document.getElementById("image");
+
+imageContainer.innerHTML += imageContainer.innerHTML;
+let position = 0;
+
+function scrollImages() {
+    position--; 
+    imageContainer.style.transform = `translateX(${position}px)`; 
+
+    if (Math.abs(position) >= imageContainer.scrollWidth / 2) {
+        position = 0;
+    }
+
+    requestAnimationFrame(scrollImages); 
+}
+
+scrollImages();
